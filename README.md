@@ -2,8 +2,10 @@
 ## A comparison between uninformed search and informed search using Dijkstra's algorithm and the A* algorithm
 
 ### How to run script:
-In the project folder, run “javac -cp lib\* src/Search.java” to compile.
-In the project folder, run “java -cp lib\* src/Search.java” to run.
+In the project folder, run “javac -cp lib\\* src/Search.java” to compile.
+
+In the project folder, run “java -cp lib\\* src/Search.java” to run.
+
 You’ll be asked for one of three inputs: 1, 2, or E.
 	Select 1 to time runtime of Dijkstra and A* between two user-input nodes.
 	Select 2 to time runtime of Dijkstra and A* between all nodes.
