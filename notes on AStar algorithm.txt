@@ -1,0 +1,44 @@
+3
+8
+16
+25
+28	28
+29
+30
+31
+34
+38
+42
+46
+56
+77
+78
+79
+93
+99
+684700
+10855700
+6945800
+7325100
+1,28
+18,28
+
+nodes 1 and 18 are in the same square and are 4954 units apart
+	But you can go outside of the square?
+
+In a 10x10 	 grid, two nodes in the same square can be no further than about 14.1 	 units apart
+In a 100x100	 grid, two nodes in the same square can be no further than about 141.4	 units apart
+In a 1000x1000	 grid, two nodes in the same square can be no further than about 1414.2	 units apart
+In a 10000x10000 grid, two nodes in the same square can be no further than about 14142.1 units apart
+
+Assumption: The each square must be of size 1000x1000 on a 10x10 grid
+Therefore, no two nodes can be further than 14142 units apart
+Make sure you do not overestimate heuristic: i.e. safe to underestimate but do not overestimate
+	If two nodes are in the same square:  Heuristic will give distance as 1
+	If two nodes are in adjacent squares: Heuristic will give distance as 1
+		If nodes share a row or column
+	If two nodes are not in the same or adjacent squares: let's just say 1000 for now
+		distance = max({|r1-r2|},{|c1-c2|}) * 1000
+
+
+Maybe landmark is the square that the vertex is in?
